@@ -94,3 +94,5 @@ def send_incident_update(payload: MonitorPayload, background_tasks: BackgroundTa
     """Trigger the RSS fetch in the background"""
     background_tasks.add_task(monitor_task, payload)
     return JSONResponse(content={"status": "accepted", "message": "Incident update is being processed"})
+
+# Hello test
