@@ -8,7 +8,7 @@
         "app_description": "Flutterwave API monitor",
         "app_logo": "https://firebasestorage.googleapis.com/v0/b/burger-application-853bd.appspot.com/o/Screenshot%202025-02-20%20at%207.07.49%E2%80%AFPM.png?alt=media&token=cf8f47ec-284b-4dc3-b101-e39800a67f6c",
         "app_name": "Payments Monitor",
-        "app_url": "URL to the application or service.",
+        "app_url": "https://flutterwave-api-monitor-eniolaomotees-projects.vercel.app/",
         "background_color": "#4A90E3"
       },
       "integration_category": "Monitoring & Logging",
@@ -25,15 +25,12 @@
         }
       ],
       "key_features": [
-        "Feature description 1.",
-        "Feature description 2.",
-        "Feature description 3.",
-        "Feature description 4."
+        "Send Alerts for Payments"
       ],
       "permissions": {
         "monitoring_user": {
           "always_online": true,
-          "display_name": "Performance Monitor"
+          "display_name": "Payment Monitor"
         }
       },
       "settings": [
