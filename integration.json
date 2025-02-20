@@ -6,26 +6,28 @@
       },
       "descriptions": {
         "app_description": "Flutterwave API monitor",
-        "app_logo": "https://firebasestorage.googleapis.com/v0/b/burger-application-853bd.appspot.com/o/Screenshot%202025-02-20%20at%207.07.49%E2%80%AFPM.png?alt=media&token=cf8f47ec-284b-4dc3-b101-e39800a67f6c",
+        "app_logo": "https://firebasestorage.googleapis.com/v0/b/burger-application-853bd.appspot.com/o/Screenshot%202025-02-20%20at%209.36.02%E2%80%AFPM.png?alt=media&token=4dab239b-0b10-4e0d-838e-4f15c9c5268d",
         "app_name": "Payments Monitor",
         "app_url": "https://flutterwave-api-monitor-eniolaomotees-projects.vercel.app/",
         "background_color": "#4A90E3"
       },
       "integration_category": "Monitoring & Logging",
       "integration_type": "interval",
-      "is_active": false,
+      "is_active": true,
       "output": [
         {
-          "label": "output_channel_1",
+          "label": "payment_channel_1",
           "value": true
         },
         {
-          "label": "output_channel_2",
+          "label": "payment_channel_2",
           "value": false
         }
       ],
       "key_features": [
-        "Send Alerts for Payments"
+        "Send Alerts for Payments",
+        "Monitors logs",
+        "Send alerts for downtimes"
       ],
       "permissions": {
         "monitoring_user": {
@@ -67,7 +69,6 @@
           "options": ["Super-Admin", "Admin", "Manager", "Developer"]
         }
       ],
-      "tick_url": "https://flutterwave-api-monitor.vercel.app/tick",
-      "target_url": "https://flutterwave-api-monitor.vercel.app/telex-webhook"
+      "tick_url": "https://flutterwave-api-monitor.vercel.app/tick"
     }
   }
