@@ -52,6 +52,7 @@
             "default": "default_telex_channel"
           }
       ],
-      "tick_url": "https://flutterwave-api-monitor.vercel.app/tick"
+      "tick_url": "https://flutterwave-api-monitor.vercel.app/tick",
+      "target_url": ""
     }
   }
