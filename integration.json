@@ -47,12 +47,6 @@
           "default": "1234567890"
         },
         {
-          "label": "Do you want to continue",
-          "type": "checkbox",
-          "required": true,
-          "default": "Yes"
-        },
-        {
           "label": "Provide Speed",
           "type": "number",
           "required": true,
@@ -73,7 +67,7 @@
           "options": ["Super-Admin", "Admin", "Manager", "Developer"]
         }
       ],
-      "tick_url": "URL for subscribing to Telex's clock.",
-      "target_url": "Optional URL for getting data from the Telex channel"
+      "tick_url": "https://flutterwave-api-monitor.vercel.app/tick",
+      "target_url": "https://flutterwave-api-monitor.vercel.app/telex-webhook"
     }
   }
