@@ -5,7 +5,7 @@
         "updated_at": "2025-02-20"
       },
       "descriptions": {
-        "app_description": "Flutterwave API monitor",
+        "app_description": "Flutterwave API Monitor for incident tracking and alerts.",
         "app_logo": "https://firebasestorage.googleapis.com/v0/b/burger-application-853bd.appspot.com/o/Screenshot%202025-02-20%20at%209.36.02%E2%80%AFPM.png?alt=media&token=4dab239b-0b10-4e0d-838e-4f15c9c5268d",
         "app_name": "Payments Monitor",
         "app_url": "https://flutterwave-api-monitor-eniolaomotees-projects.vercel.app/",
@@ -13,15 +13,12 @@
       },
       "integration_category": "Monitoring & Logging",
       "integration_type": "interval",
+      "author": "Omotee34",
       "is_active": true,
       "output": [
         {
           "label": "payment_channel_1",
           "value": true
-        },
-        {
-          "label": "payment_channel_2",
-          "value": false
         }
       ],
       "key_features": [
@@ -40,34 +37,20 @@
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "* * * * *"
+          "default": "*/5 * * * *"
         },
         {
-          "label": "Key",
-          "type": "text",
-          "required": true,
-          "default": "1234567890"
-        },
+            "label": "return_url",
+            "type": "text",
+            "required": true,
+            "default": "https://telex-webhook.example.com"
+          },
         {
-          "label": "Provide Speed",
-          "type": "number",
-          "required": true,
-          "default": "1000"
-        },
-        {
-          "label": "Sensitivity Level",
-          "type": "dropdown",
-          "required": true,
-          "default": "Low",
-          "options": ["High", "Low"]
-        },
-        {
-          "label": "Alert Admin",
-          "type": "multi-checkbox",
-          "required": true,
-          "default": "Super-Admin",
-          "options": ["Super-Admin", "Admin", "Manager", "Developer"]
-        }
+            "label": "channel_id",
+            "type": "text",
+            "required": true,
+            "default": "default_telex_channel"
+          }
       ],
       "tick_url": "https://flutterwave-api-monitor.vercel.app/tick"
     }
