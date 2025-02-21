@@ -56,29 +56,17 @@ def fetch_rss_feed():
         logging.error("Failed to fetch RSS feed: %s", str(e))
         return JSONResponse(content={"error": f"Failed to fetch RSS feed: {str(e)}"}, status_code=500)
     
-def summarize_incident(details:str,max_length: int =250):
-    """Extract and truncate the most important part of the incident details."""
-    clean_text = re.sub(r"<.*?>", "", details)  # Remove HTML tags
-    return clean_text[:max_length] + "..." if len(clean_text) > max_length else clean_text
 
 async def monitor_task(payload: MonitorPayload):
     """Background task to fetch RSS feed and post to return_url"""
     try:
         rss_data = fetch_rss_feed().body.decode()
         incident_data = json.loads(rss_data)
-        
-        
-        summary = summarize_incident(incident_data["details"], max_length=250)
 
         data = {
             "message": "Flutterwave Incident Update",
             "status": "success" if "error" not in incident_data else "failed",
-            "incident": {
-                "title": incident_data["title"],
-                "date": incident_data["date"],
-                "summary": summary, 
-                "link": incident_data["link"]
-            },
+            "incident": incident_data,
             "channel_id": payload.channel_id
         }
 
