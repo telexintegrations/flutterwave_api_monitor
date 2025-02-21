@@ -53,7 +53,7 @@ def fetch_rss_feed():
     
     except Exception as e:
         logging.error("Failed to fetch RSS feed: %s", str(e))
-        return JSONResponse({"error": f"Failed to fetch RSS feed: {str(e)}"}, status_code=500) 
+        return JSONResponse(content={"error": f"Failed to fetch RSS feed: {str(e)}"}, status_code=500)
 
 async def monitor_task(payload: MonitorPayload):
     """Background task to fetch RSS feed and post to return_url"""
@@ -86,3 +86,16 @@ def send_incident_update(payload: MonitorPayload, background_tasks: BackgroundTa
     background_tasks.add_task(monitor_task, payload)
     
     return JSONResponse(content={"status": "accepted", "message": "Incident update is being processed"})
+
+@app.get("/integration")
+def get_integration():
+    """Return integration details from JSON file"""
+    try:
+        with open("integration.json", "r") as file:
+            integration_data = json.load(file)
+        
+        return JSONResponse(content=integration_data)
+    
+    except Exception as e:
+        logging.error("Failed to load integration.json: %s", str(e))
+        return JSONResponse(content={"error": "Failed to load integration.json"}, status_code=500)
