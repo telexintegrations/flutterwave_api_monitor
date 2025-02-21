@@ -59,11 +59,21 @@ def fetch_rss_feed():
 
 
 @app.get("/integration")
-def get_integration_json():
+def get_integration_json(background_tasks:BackgroundTasks):
     """Serve the integration settings JSON"""
     try:
         with open("integration.json", "r") as file:
             integration_json = json.load(file)
+        
+        # Extract return_url from the JSON file
+        settings = integration_json.get("data", {}).get("settings", [])
+        return_url = next((s["default"] for s in settings if s["label"] == "return_url"), None)
+        channel_id = next((s["default"] for s in settings if s["label"] == "channel_id"), "default_telex_channel")
+
+        
+        if return_url:
+            payload = MonitorPayload(return_url=return_url, channel_id=channel_id)
+            background_tasks.add_task(monitor_task, payload)
         return integration_json
     except Exception as e:
         return {"error": f"Failed to load integration settings: {str(e)}"}
