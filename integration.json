@@ -24,7 +24,8 @@
       "key_features": [
         "Send Alerts for Payments",
         "Monitors logs",
-        "Send alerts for downtimes"
+        "Send alerts for downtimes",
+        "Checks with intervals for errors"
       ],
       "permissions": {
         "monitoring_user": {
