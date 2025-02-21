@@ -43,17 +43,17 @@
             "label": "return_url",
             "type": "text",
             "required": true,
-            "default": "https://telex-webhook.example.com"
+            "default": "https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079"
           },
         {
             "label": "channel_id",
             "type": "text",
             "required": true,
-            "default": "default_telex_channel"
+            "default": "01951bbd-4938-796d-9dee-f73c67a78079"
           }
       ],
       "tick_url": "https://flutterwave-api-monitor-2.onrender.com/tick",
       "target_url": ""
     }
   }
-  
+
