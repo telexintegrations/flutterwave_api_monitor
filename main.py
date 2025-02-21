@@ -7,8 +7,13 @@ import httpx
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import re
+import os 
+from dotenv import load_dotenv
 
-# Configure Logging
+
+load_dotenv()
+
+
 logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 app = FastAPI()
@@ -49,43 +54,42 @@ def fetch_rss_feed():
                 "link": incident_link
             }) 
         
-        logging.warning("No incidents found in RSS feed")
-        return JSONResponse(content={"error": "No incidents found in RSS feed"}, status_code=404)
+        logging.warning("No incident reports found.")
+        return JSONResponse(content={"error": "No incident reports found."}, status_code=404)
     
     except Exception as e:
         logging.error("Failed to fetch RSS feed: %s", str(e))
         return JSONResponse(content={"error": f"Failed to fetch RSS feed: {str(e)}"}, status_code=500)
     
 
-async def monitor_task(payload: MonitorPayload):
-    """Background task to fetch RSS feed and post to return_url"""
+def monitor_task():
     try:
         rss_data = fetch_rss_feed().body.decode()
         incident_data = json.loads(rss_data)
 
         data = {
-            "message": "Flutterwave Incident Update",
-            "status": "success" if "error" not in incident_data else "failed",
-            "incident": incident_data,
-            "channel_id": payload.channel_id
+            "message": f"Flutterwave Incident Update \n {incident_data}",
+            "status": "success",
+            "event_name":"Payment update",
+            "username":"Flutterwave monitor"
+        
         }
-
+        
         logging.info("Sending data to Telex: %s", json.dumps(data, indent=2))
-
-        async with httpx.AsyncClient() as client:
-            response = await client.post(payload.return_url, json=data)
-            response.raise_for_status()
-            logging.info("Successfully sent data to Telex, response: %s", response.text)
+        response = httpx.post(os.getenv("TELEX_WEBHOOK"), json=data)
+        
+        response.raise_for_status()
+        
+        logging.info("Successfully sent data to Telex, response: %s", response.text)
         
     except Exception as e:
         logging.error("Error posting data to Telex: %s", str(e))
 
 @app.post("/tick")
-def send_incident_update(payload: MonitorPayload, background_tasks: BackgroundTasks):
-    """Trigger the RSS fetch in the background"""
-    logging.info("Received tick request with payload: %s", payload.dict())
+def send_incident_update(background_tasks: BackgroundTasks):
+    logging.info("Received tick request with payload")
     
-    background_tasks.add_task(monitor_task, payload)
+    background_tasks.add_task(monitor_task)
     
     return JSONResponse(content={"status": "accepted", "message": "Incident update is being processed"})
 
@@ -104,4 +108,3 @@ def get_integration():
 
 
 
-# Hello

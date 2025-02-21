@@ -97,3 +97,157 @@
 2025-02-21 15:54:00,333 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
 2025-02-21 15:54:00,334 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
 2025-02-21 16:10:42,967 - WARNING - No incidents found in RSS feed
+2025-02-21 22:02:18,353 - WARNING - No incidents found in RSS feed
+2025-02-21 22:02:49,187 - INFO - Received tick request with payload: {'return_url': 'string', 'channel_id': 'string'}
+2025-02-21 22:02:49,232 - WARNING - No incidents found in RSS feed
+2025-02-21 22:02:49,233 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "user_name": "Flutterwave monitor"
+}
+2025-02-21 22:02:50,117 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 22:02:50,118 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"user_name is not an allowed value, username is missing"}
+2025-02-21 22:05:15,693 - INFO - Received tick request with payload: {'return_url': 'string', 'channel_id': 'string'}
+2025-02-21 22:05:16,206 - WARNING - No incidents found in RSS feed
+2025-02-21 22:05:16,206 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "user_name": "Flutterwave monitor"
+}
+2025-02-21 22:05:16,909 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 22:05:16,909 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"user_name is not an allowed value, username is missing"}
+2025-02-21 22:14:50,124 - WARNING - No incidents found in RSS feed
+2025-02-21 22:15:09,631 - INFO - Received tick request with payload: {'return_url': 'string', 'channel_id': 'string'}
+2025-02-21 22:15:10,064 - WARNING - No incidents found in RSS feed
+2025-02-21 22:15:10,065 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "user_name": "Flutterwave monitor"
+}
+2025-02-21 22:15:10,821 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 22:15:10,823 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"user_name is not an allowed value, username is missing"}
+2025-02-21 23:19:32,976 - WARNING - No incidents found in RSS feed
+2025-02-21 23:19:42,786 - INFO - Received tick request with payload: {'return_url': 'string', 'channel_id': 'string'}
+2025-02-21 23:19:42,847 - WARNING - No incidents found in RSS feed
+2025-02-21 23:19:42,847 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "user_name": "Flutterwave monitor"
+}
+2025-02-21 23:19:43,555 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:19:43,555 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"user_name is not an allowed value, username is missing"}
+2025-02-21 23:22:36,284 - INFO - Received tick request with payload
+2025-02-21 23:22:36,697 - WARNING - No incidents found in RSS feed
+2025-02-21 23:22:36,697 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "user_name": "Flutterwave monitor"
+}
+2025-02-21 23:22:37,456 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:22:37,457 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"user_name is not an allowed value, username is missing"}
+2025-02-21 23:23:10,526 - INFO - Received tick request with payload
+2025-02-21 23:23:10,591 - WARNING - No incidents found in RSS feed
+2025-02-21 23:23:10,591 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:23:11,080 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:23:11,081 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"ba23d4b9-ef72-4902-97eb-5f58396a6c84"}
+2025-02-21 23:25:18,308 - INFO - Received tick request with payload
+2025-02-21 23:25:18,732 - WARNING - No incidents found in RSS feed
+2025-02-21 23:25:18,732 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:25:19,413 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:25:19,416 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"42f8e484-d092-4dac-97a2-fb9411480412"}
+2025-02-21 23:27:01,233 - INFO - Received tick request with payload
+2025-02-21 23:27:01,479 - WARNING - No incidents found in RSS feed
+2025-02-21 23:27:01,480 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:27:02,162 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:27:02,163 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"6dacde5e-df3e-4319-8386-bb1d96a179ef"}
+2025-02-21 23:27:05,386 - INFO - Received tick request with payload
+2025-02-21 23:27:05,427 - WARNING - No incidents found in RSS feed
+2025-02-21 23:27:05,427 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:27:05,926 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:27:05,926 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"b0eff798-93a4-48be-947e-d9896adf72f4"}
+2025-02-21 23:27:25,794 - INFO - Received tick request with payload
+2025-02-21 23:27:25,842 - WARNING - No incidents found in RSS feed
+2025-02-21 23:27:25,845 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:27:26,329 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:27:26,330 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"0fd96810-c715-4be2-9ce5-0825e582d8bb"}
+2025-02-21 23:29:21,774 - WARNING - No incidents found in RSS feed
+2025-02-21 23:29:31,214 - INFO - Received tick request with payload
+2025-02-21 23:29:31,273 - WARNING - No incidents found in RSS feed
+2025-02-21 23:29:31,273 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:29:31,956 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:29:31,956 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"7a538bd4-61fa-458f-b14d-c523a29396f4"}
+2025-02-21 23:34:16,928 - INFO - Received tick request with payload
+2025-02-21 23:34:17,427 - WARNING - No incidents found in RSS feed
+2025-02-21 23:34:17,428 - INFO - Sending data to Telex: {
+  "event_name": "string",
+  "message": "python post",
+  "status": "success",
+  "username": "collins"
+}
+2025-02-21 23:34:18,111 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:34:18,111 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"89bb29ac-814f-4533-94c5-073134f29f2d"}
+2025-02-21 23:36:08,938 - INFO - Received tick request with payload
+2025-02-21 23:36:09,188 - WARNING - No incidents found in RSS feed
+2025-02-21 23:36:09,188 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "success",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:36:09,868 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:36:09,869 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"627681ff-0b2a-4d73-9d58-23187ef72511"}
+2025-02-21 23:38:12,273 - INFO - Received tick request with payload
+2025-02-21 23:38:12,694 - WARNING - No incidents found in RSS feed
+2025-02-21 23:38:12,694 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update \n {'error': 'No incidents found in RSS feed'}",
+  "status": "success",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:38:13,959 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:38:13,959 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"1b5c9fbf-623e-44a6-9fa4-79edba8c38d6"}
+2025-02-21 23:38:46,562 - INFO - Received tick request with payload
+2025-02-21 23:38:46,629 - WARNING - No incidents found in RSS feed
+2025-02-21 23:38:46,629 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update \n {'error': 'No incidents found in RSS feed'}",
+  "status": "success",
+  "event_name": "Payment update",
+  "username": "Flutterwave monitor"
+}
+2025-02-21 23:38:47,130 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 23:38:47,130 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"b8e7ad4d-c98d-4dbd-abdb-c02fbfb6eb98"}
