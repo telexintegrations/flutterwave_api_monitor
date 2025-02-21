@@ -16,14 +16,14 @@ flutterwave-json/
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/
-   cd telex-json
+   git clone https://github.com/telexintegrations/flutterwave_api_monitor
+   cd flutterwave_api_monitor
    ```
 
 2. **Create a Virtual Environment** (optional but recommended)
    ```sh
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Install Dependencies**
@@ -42,7 +42,7 @@ uvicorn main:app --reload
 
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| GET    | `/`     | Returns the contents of `integration.json` |
+| GET    | `/integration`     | Returns the contents of `integration.json` |
 
 Once the server is running, visit:
 ```
