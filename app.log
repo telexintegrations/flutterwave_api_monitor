@@ -1,0 +1,99 @@
+2025-02-21 15:52:40,224 - WARNING - No incidents found in RSS feed
+2025-02-21 15:52:50,089 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:34,289 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:34,336 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:34,336 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:35,103 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:35,106 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:57,802 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:58,030 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:58,030 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:58,526 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:58,527 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:58,573 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:58,655 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:58,656 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:58,788 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:58,828 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:58,828 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:58,953 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:58,990 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:58,990 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:59,128 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:59,166 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:59,166 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:59,174 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:59,176 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:59,332 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:59,333 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:59,491 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:59,491 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:59,518 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:59,555 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:59,555 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:53:59,649 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:53:59,650 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:53:59,804 - INFO - Received tick request with payload: {'return_url': 'https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079', 'channel_id': '01951bbd-4938-796d-9dee-f73c67a78079'}
+2025-02-21 15:53:59,842 - WARNING - No incidents found in RSS feed
+2025-02-21 15:53:59,842 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update",
+  "status": "failed",
+  "incident": {
+    "error": "No incidents found in RSS feed"
+  },
+  "channel_id": "01951bbd-4938-796d-9dee-f73c67a78079"
+}
+2025-02-21 15:54:00,038 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:54:00,039 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 15:54:00,333 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-21 15:54:00,334 - INFO - Successfully sent data to Telex, response: {"status":"error","status_code":400,"message":"incident is not an allowed value, channel_id is not an allowed value, event_name is missing, username is missing"}
+2025-02-21 16:10:42,967 - WARNING - No incidents found in RSS feed
