@@ -308,3 +308,90 @@
 }
 2025-02-22 10:30:24,291 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
 2025-02-22 10:30:24,291 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"3ec56fd2-595f-43ea-b30c-d1d92d768369"}
+2025-02-22 13:16:54,257 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:16:54,258 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:17:02,585 - INFO - Received tick request with payload
+2025-02-22 13:17:02,983 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:17:02,984 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:17:02,984 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:17:03,806 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:17:03,807 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"5a6ff36b-0805-4718-ae57-60e1a779aa4f"}
+2025-02-22 13:21:41,429 - INFO - Received tick request with payload
+2025-02-22 13:21:42,242 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:21:42,243 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:21:42,243 - INFO - Formatted message_text: Flutterwave Incident Update
+Status: All Systems Operational
+Indicator: none
+Last Updated: 2025-02-22T00:15:56.947Z
+2025-02-22 13:21:42,243 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:21:42,929 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:21:42,929 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"f8daa994-c2d5-4aeb-be72-311cacf51373"}
+2025-02-22 13:22:59,387 - INFO - Received tick request with payload
+2025-02-22 13:23:00,249 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:23:00,249 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:23:00,249 - INFO - Formatted message_text: Flutterwave Incident Update
+Status: All Systems Operational
+Indicator: none
+Last Updated: 2025-02-22T00:15:56.947Z
+2025-02-22 13:23:00,249 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:23:01,107 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:23:01,109 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"0fe6e1ab-5931-4a64-8251-f421d0797e0d"}
+2025-02-22 13:24:11,488 - INFO - Received tick request with payload
+2025-02-22 13:24:12,248 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:24:12,250 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:24:12,250 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:24:12,731 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:24:12,731 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"6e0a714b-a685-4e76-8d0c-9603788b1441"}
+2025-02-22 13:24:43,736 - INFO - Received tick request with payload
+2025-02-22 13:24:44,486 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:24:44,487 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:24:44,487 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:24:45,156 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:24:45,156 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"a5388dc2-29f6-4367-aeaf-bf6ae33c7422"}
+2025-02-22 13:29:45,196 - INFO - Received tick request with payload
+2025-02-22 13:29:45,958 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:29:45,959 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:29:45,960 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:29:46,657 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:29:46,657 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"1c840cbd-f768-4718-8a7f-632a44bd9f2e"}
+2025-02-22 13:33:37,280 - INFO - Received tick request with payload
+2025-02-22 13:33:38,195 - INFO - HTTP Request: GET https://status.flutterwave.com/api/v2/status.json "HTTP/1.1 200 OK"
+2025-02-22 13:33:38,196 - INFO - Fetched latest status: All Systems Operational
+2025-02-22 13:33:38,197 - INFO - Sending data to Telex: {
+  "message": "Flutterwave Incident Update\nStatus: All Systems Operational\nIndicator: none\nLast Updated: 2025-02-22T00:15:56.947Z",
+  "status": "success",
+  "event_name": "Status update",
+  "username": "Flutterwave monitor"
+}
+2025-02-22 13:33:38,670 - INFO - HTTP Request: POST https://ping.telex.im/v1/webhooks/01951bbd-4938-796d-9dee-f73c67a78079 "HTTP/1.1 202 Accepted"
+2025-02-22 13:33:38,670 - INFO - Successfully sent data to Telex, response: {"status":"success","status_code":202,"message":"request received","task_id":"34eb1104-3c90-4197-9642-9f7f769934d8"}

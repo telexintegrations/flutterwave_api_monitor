@@ -64,7 +64,7 @@ def monitor_task():
             f"Indicator: {parsed_data.get('indicator', 'N/A')}\n"
             f"Last Updated: {parsed_data.get('updated_at', 'N/A')}"
         )
-
+        
         data = {
             "message": message_text,
             "status": "success",
@@ -75,7 +75,7 @@ def monitor_task():
         
         logging.info("Sending data to Telex: %s", json.dumps(data, indent=2))
         response = httpx.post(os.getenv("TELEX_WEBHOOK"), json=data)
-        
+                
         response.raise_for_status()
         
         logging.info("Successfully sent data to Telex, response: %s", response.text)
