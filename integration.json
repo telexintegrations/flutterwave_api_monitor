@@ -38,7 +38,7 @@
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "*/5 * * * *"
+          "default": "*/10 * * * *"
         }
       ],
       "tick_url": "https://flutterwave-api-monitor-2.onrender.com/tick",

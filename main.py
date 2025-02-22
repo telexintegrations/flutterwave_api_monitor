@@ -70,7 +70,7 @@ def monitor_task():
         data = {
             "message": f"Flutterwave Incident Update \n {incident_data}",
             "status": "success",
-            "event_name":"Payment update",
+            "event_name":"Status update",
             "username":"Flutterwave monitor"
         
         }
