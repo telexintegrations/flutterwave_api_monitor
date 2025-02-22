@@ -26,49 +26,40 @@ app.add_middleware(
     allow_headers=["*"], 
 )
 
-RSS_FEED_URL = "https://status.flutterwave.com/history.rss"
+STATUS_API_URL = "https://status.flutterwave.com/api/v2/status.json"
 
 class MonitorPayload(BaseModel):
     return_url: str
     channel_id: str
     
 @app.get("/")
-def fetch_rss_feed():
-    """Fetch and parse the Flutterwave RSS feed"""
+def fetch_status_api():
+    """Fetch and parse the Flutterwave Status API"""
     try:
-        feed = feedparser.parse(RSS_FEED_URL)
+        response = httpx.get(STATUS_API_URL)
+        response.raise_for_status()
+        status_data=response.json()
         
-        if feed.entries and len(feed.entries) > 0:
-            latest_entry = feed.entries[0]
-            incident_title = latest_entry.title
-            incident_link = latest_entry.link
-            incident_date = latest_entry.published
-            incident_description = latest_entry.description
-            
-            logging.info("Fetched latest incident: %s", incident_title)
-
-            return JSONResponse(content={
-                "title": incident_title,
-                "date": incident_date,
-                "details": incident_description,
-                "link": incident_link
-            }) 
+        logging.info("Fetched latest status: %s", status_data["status"]["description"])
         
-        logging.warning("No incident reports found.")
-        return JSONResponse(content={"error": "No incident reports found."}, status_code=404)
-    
+        return JSONResponse(content={
+            "status": status_data["status"]["description"],
+            "indicator": status_data["status"]["indicator"],
+            "updated_at": status_data["page"]["updated_at"]
+        }) 
+        
     except Exception as e:
-        logging.error("Failed to fetch RSS feed: %s", str(e))
-        return JSONResponse(content={"error": f"Failed to fetch RSS feed: {str(e)}"}, status_code=500)
+        logging.error("Failed to fetch Status API: %s", str(e))
+        return JSONResponse(content={"error": f"Failed to fetch Status API: {str(e)}"}, status_code=500)
     
 
 def monitor_task():
     try:
-        rss_data = fetch_rss_feed().body.decode()
-        incident_data = json.loads(rss_data)
+        rss_data = fetch_status_api().body.decode()
+        parsed_data = json.loads(rss_data)
 
         data = {
-            "message": f"Flutterwave Incident Update \n {incident_data}",
+            "message": f"Flutterwave Incident Update \n {parsed_data}",
             "status": "success",
             "event_name":"Status update",
             "username":"Flutterwave monitor"
