@@ -55,11 +55,18 @@ def fetch_status_api():
 
 def monitor_task():
     try:
-        rss_data = fetch_status_api().body.decode()
-        parsed_data = json.loads(rss_data)
+        status_data = fetch_status_api().body.decode()
+        parsed_data = json.loads(status_data)
+        
+        message_text = (
+            f"Flutterwave Incident Update\n"
+            f"Status: {parsed_data.get('status', 'N/A')}\n"
+            f"Indicator: {parsed_data.get('indicator', 'N/A')}\n"
+            f"Last Updated: {parsed_data.get('updated_at', 'N/A')}"
+        )
 
         data = {
-            "message": f"Flutterwave Incident Update \n {parsed_data}",
+            "message": message_text,
             "status": "success",
             "event_name":"Status update",
             "username":"Flutterwave monitor"
@@ -75,6 +82,7 @@ def monitor_task():
         
     except Exception as e:
         logging.error("Error posting data to Telex: %s", str(e))
+    
 
 @app.post("/tick")
 def send_incident_update(background_tasks: BackgroundTasks):
